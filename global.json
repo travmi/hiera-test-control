@@ -1,0 +1,16 @@
+{
+    "vmwaretools::vmwaretools_tools_version": "4.1latest",
+    "vmwaretools::vmwaretools_autoupgrade": true,
+    "dnsclient::nameservers": [
+        "192.168.11.240",
+        "192.168.11.241",
+        "192.168.11.120",
+		"192.168.0.9"
+    ],
+    "dnsclient::options": [
+        "timeout:4"
+    ],
+    "dnsclient::search": "wcw.local",
+    "postfix::relayhost": "outgoing-mx.wcw.local",
+    "postfix::mynetworks": "192.168.11.0/24,10.1.25.0/24,127.0.0.0/8"
+}
